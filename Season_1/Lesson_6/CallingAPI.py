@@ -9,8 +9,11 @@ import requests
 import json
 
 # Key to access the Computer Vision Service
+from dotenv import load_dotenv
 import os
+load_dotenv()
 SUBSCRIPTION_KEY = os.getenv("AZURE_VISION_KEY")
+print(SUBSCRIPTION_KEY)
 
 # Address for the Computer Vision Service
 vision_service_address = "https://julianspythonimageanalyzer.cognitiveservices.azure.com/"
